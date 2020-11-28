@@ -1,11 +1,11 @@
-require('dotenv').config()
+const TOKEN_KEY = require('dotenv').config(process.env.TOKEN_KEY);
 
 export const initialState = {
   user: null,
   playlist: [],
   playing: false,
   item: null,
-  token: process.env.REACT_APP_TOKEN_KEY,
+  token: TOKEN_KEY,
 }
 
 const reducer = (state, action) => {
