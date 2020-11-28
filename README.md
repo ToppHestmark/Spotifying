@@ -7,7 +7,3 @@ Cloning Spotify app with React JS.
 - Material UI
 - React Context API (alternative Redux)
 
-
-Login component
-[] Spotify Logo
-[] Login with Spotify button
