@@ -1,5 +1,5 @@
 import React from 'react';
-import { loginUrl } from '../utils/spotify';
+import { loginUrl } from '../context/spotify';
 import  './Login.css';
 
 function Login() {

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Login from './components/Login';
-import { getTokenFromUrl } from './utils/spotify';
+import { getTokenFromUrl } from './context/spotify';
 import SpotifyWebApi from 'spotify-web-api-js';
 import Player from './components/Player';
-import { useStateContextValue } from './utils/StateProvider'
+import { useStateContextValue } from './context/StateProvider'
 
 const spotify = new SpotifyWebApi();
 
@@ -39,7 +39,7 @@ function App() {
   console.log('This is the token:', token);
 
   return (
-    <div className="app">{token ? (<Player />) : (<Login />)}</div>
+    <div className="app">{token ? (<Player spotify={spotify} />) : (<Login />)}</div>
   );
 }
 
