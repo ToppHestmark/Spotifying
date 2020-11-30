@@ -2,10 +2,10 @@ const TOKEN_KEY = require('dotenv').config(process.env.TOKEN_KEY);
 
 export const initialState = {
   user: null,
-  playlist: [],
+  playlists: [],
   playing: false,
   item: null,
-  token: TOKEN_KEY,
+  // token: TOKEN_KEY,
 }
 
 const reducer = (state, action) => {
@@ -22,6 +22,11 @@ const reducer = (state, action) => {
         ...state,
         token: action.token,
       }
+      case 'SET_PLAYLISTS':
+        return {
+          ...state,
+          playlists: action.playlists,
+        }
       default:
         return state;
   }
