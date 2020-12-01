@@ -7,7 +7,6 @@ import SkipNextIcon from "@material-ui/icons/SkipNext";
 import ShuffleIcon from "@material-ui/icons/Shuffle";
 import RepeatIcon from "@material-ui/icons/Repeat";
 import VolumeDownIcon from "@material-ui/icons/VolumeDown";
-import PauseCircleOutlineIcon from "@material-ui/icons/PauseCircleOutline";
 import PlaylistPlayIcon from "@material-ui/icons/PlaylistPlay";
 import { Grid, Slider } from "@material-ui/core";
 
@@ -17,11 +16,11 @@ function Footer() {
       <div className="footer__left">
         <img 
         className="footer__albumLogo"
-        src="https://img.discogs.com/vPyz98tSeZExkGVjl4fgLThOTxQ=/fit-in/600x582/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4251351-1359747013-1471.jpeg.jpg"
+        src="https://m.media-amazon.com/images/I/61XXeN3XQCL._SS500_.jpg"
         alt="Album image"/>
         <div className="footer__songInfo">
-          <h4>Vi Ska Fæst</h4>
-          <p>D.D.E.</p>
+          <h4>Official Theme Music</h4>
+          <p>Pappa Pig</p>
         </div>
       </div>
       <div className="footer__center">
